@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do</title>
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="bg-hw-dark-purple p-3 flex gap-2 justify-between items-center"
+    >
+      <!-- left part of the header -->
+      <div class="ml-3 text-center flex justify-center gap-2">
+        <button class="cursor-pointer">
+          <img
+            class="w-7"
+            src="./assets/hamburger-menu.svg"
+            alt="hamburger menu icon"
+          />
+        </button>
+        <p class="text-lg text-white">My To-Do Tasks</p>
+      </div>
+      <!-- right part of the header -->
+      <div class="flex pr-3 sm:justify-center justify-between gap-5">
+        <!-- search button-->
+        <div
+          class="flex items-center bg-hw-light-purple p-2 px-5 rounded-md w-full gap-1"
+        >
+          <img
+            class="cursor-pointer text-center items-center justify-center mr-2"
+            id="search"
+            src="./assets/search.svg"
+            alt="search icon"
+          />
+          <input
+            type="text"
+            id="input-search"
+            class="focus:outline-none focus:ring-0 border-none text-white rounded bg-transparent placeholder:text-gray-300 text-sm"
+            placeholder="Search"
+          />
+        </div>
+        <!-- filter button -->
+        <button id="btn-filter" class="cursor-pointer">
+          <img src="./assets/filter.svg" alt="filter icon" />
+        </button>
+        <!-- add button -->
+        <button id="btn-add" class="cursor-pointer">
+          <img src="./assets/plus.svg" alt="add item icon" />
+        </button>
+      </div>
+    </header>
+  </body>
+</html>
